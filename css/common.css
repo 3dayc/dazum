@@ -1,0 +1,119 @@
+@import 'reset.css';
+
+select{width:136px; height:36px; border:1px solid #d9d9d9; padding:0 6px;}
+input{width:136px; height:32px; border:1px solid #d9d9d9; padding:0 6px;}
+input[type="checkbox"]{width:18px;}
+button{padding:8px 10px 8px 10px; font-size:13px; border:2px solid #000; background-color:#fff; border-radius:4px; cursor:pointer;}
+button.active{color:#fff; background-color:#000;}
+button.message{padding:5px 5px 5px 5px; background-color:#f2f2f2; border:1px solid #d9d9d9; color:#7f7f7f; letter-spacing:-1.5px;}
+.btn_paging{margin-top:20px; text-align:center; color:rgb(117, 117, 117); height:140px;}
+.btn_paging .left{float:left; line-height:30px; font-size:14px}
+.btn_paging .center > button{border:1px solid #d9d9d9;}
+.btn_paging .right{float:right; position:relative; top:-35px; font-size:14px}
+table{width:100%;}
+table > thead > tr > td{text-align:center; border:1px solid #d9d9d9; font-size:14px; padding:14px 20px}
+table > thead > tr > td:nth-of-type(1){padding-left:5px; padding-right:5px}
+table > thead > tr > td:nth-of-type(2){padding-left:5px; padding-right:5px}
+table > thead > tr > td:nth-of-type(3){padding-left:50px; padding-right:50px}
+table > tbody > tr:nth-child(odd){background-color:#f2f2f2;}
+table > tbody > tr{height:40px;}
+table > tbody > tr > td{text-align:center;  vertical-align:middle; font-size:14px; border:1px solid #d9d9d9;}
+label{display:block; font-size:14px; margin-bottom:10px; color: rgb(80, 80, 80); position: relative;}
+label .circle{display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#000; position: relative; top:-2px; margin-right:6px;}
+label input{margin-left:30px;}
+textarea{width:373px;}
+
+/* aside */
+#aside{overflow:hidden;position:absolute;top:0;left:0;width:240px;height:1800px;background-color:#262626;}
+#aside h1 a{display: flex;align-items: center;justify-content:center;height:50px; background-color:#000000; font-size:20px; font-weight:bold}
+.gnb{background:#262626}
+.gnb a{display:block; font-size:14px}
+.gnb>li>a{padding:25px;background:#262626;color:#fff;white-space:nowrap}
+.gnb>li>a>i{float:right;}
+.gnb>li+li>a{border-top:1px solid #4c505c}
+.gnb .last_list{border-bottom:1px solid #4c505c}
+.gnb .dep2{display:none; padding:10px 25px;color:#7d858d;background:#313131}
+.gnb .dep2.active{display:block}
+.gnb .dep2>li{padding:20px 0}
+.gnb .dep2>li+li{border-top:1px solid #545760}
+.gnb .dep2>li>a{display:inline-block;padding-right:30px;background-size:21px;color:#fff}
+.gnb .dep2>li>a.on{background-size:21px;color:#00b0f0}
+
+/* .left_section{width:200px; background-color:#262626; color:#ffffff; position:absolute; top:0; bottom:0;}
+.left_section > h1{background-color:#000000; text-align:center; height:36px; line-height:36px; font-weight:bold; font-size:15px;}
+.left_section .nav_tit{height:32px; line-height:32px; font-size:12px; padding-left:6px; box-sizing:border-box; cursor:pointer;}
+.left_section > ul > li{height:100%; border-bottom:1px solid rgba(255, 255, 255, 0.7);}
+.left_section > ul > li > a{display:block; padding:0 8px 0 6px; height:32px; line-height:32px; font-size:12px;}
+.left_section > ul > li.firstList > a{position:relative; left:-6px;}
+.left_section > ul > li > a > i{float:right; position:relative; top:12px}
+.left_section .active_nav{background-color:#0070c0; border-bottom:1px solid #0070c0; box-sizing:border-box;}
+.left_section .active_two-nav{color:#00b0f0;}
+.left_section .js-title + .two-depth{display:none;}
+.left_section .two-depth > li > a{display:block; padding-left:16px; margin:16px 0; font-size:12px;} */
+
+.right_section{width:100%;}
+.right_section .header{width:100%; height:50px; background-color:#262626; padding-left:200px; box-sizing:border-box;}
+.right_section .header > ul{float:right;}
+.right_section .header > ul > li{float:left;}
+.right_section .header > ul > li > a{display:inline-block; line-height:50px; font-size:12px;}
+.right_section .header > ul > li:nth-of-type(1){margin-right:18px;}
+.right_section .header > ul > li:nth-of-type(2){padding:0 16px; padding-bottom:2px; border-left:1px solid rgba(255, 255, 255, 0.3); border-right:1px solid rgba(255, 255, 255, 0.3);}
+.right_section .header > ul > li:nth-of-type(2) > a{font-size:11px;}
+.right_section .header > ul > li:nth-of-type(3){margin:5px 10px 0 9px; height:0;}
+.right_section .contain_header{height:50px; background-color:#f2f2f2; width:100%; padding-left:240px; box-sizing:border-box;}
+.right_section .contain_header > h1{font-size:14px; line-height:50px; margin-left:10px; font-weight:bold; color:#7f7f7f; display:inline-block;}
+.right_section .contain_header .route{float:right; line-height:50px; font-size:12px; margin-right:-168px; color:#7f7f7f;}
+.right_section .contain_header .route > p{float:left;}
+.right_section .contain_header .route > span{float:left; margin:0 3px;}
+
+.right_section .container{padding:0 20px 0 260px;}
+.right_section .container .tab{width:100%; height:50px; margin-top:20px; box-sizing:border-box; border-bottom:1px solid #7f7f7f;}
+.right_section .container .tab_left .tab-item{width:160px; height:51px; float:left; line-height:48px; padding-left:14px; font-size:14px;box-sizing:border-box; border:1px solid #7f7f7f; position:relative; top:-1px; left:-1px; border-radius:8px 8px 0 0; cursor:pointer;}
+.right_section .container .tab_left .tab-item:nth-of-type(2){position: relative; left:-2px}
+.right_section .container .tab_left .tab-item:nth-of-type(3){position: relative; left:-3px}
+.right_section .container .tab_left .tab-item.active{border-top:2px solid #0e77c2;border-right:2px solid #0e77c2;border-left:2px solid #0e77c2;border-bottom:1px solid #fff; font-weight:bold;}
+.right_section .container .tab_right{float:right; position: relative; top:14px; font-size:14px; margin-right:14px;}
+.right_section .container .tab_right > p{float:left;}
+.right_section .container .tab_right > span{float:left; position: relative; top:-2px; opacity:0.9;}
+.right_section .container .info{width:100%; background-color:#f2f2f2;margin-top:20px; border:1px solid #e2e2e2; padding:10px; box-sizing:border-box;}
+.right_section .container .info > button{float:right;}
+.right_section .container .grid_btn{margin:20px 0;}
+.right_section .container .grid_btn .message{float:right; margin-left:6px; margin-top:5px}
+
+.footer{height:28px; width:100%; text-align:center; line-height:28px; position:fixed; bottom:0; background-color:#7f7f7f; color:#ffffff; font-size:12px;}
+
+/* modal */
+.modal {position: fixed;z-index: 10;left: 0;top: 0;width: 100%;height: 100%;overflow: auto; transition:0.3s; visibility:hidden; opacity:0;}
+.modal .modal-box{width:1000px; height: 520px; background-color:#fff; position: absolute; left:50%; top:50%; transform:translate(-50%, -50%); border:1px solid rgb(124, 124, 124);}
+.modal .overlay{background-color: rgba(0,0,0,0.5); width:100%; height:100%;}
+.modal-box .modal-header{height:40px; background-color:#000;}
+.modal-box .modal-header h1{color:#fff; font-size:14px; padding:12px 0 0 10px;}
+.modal-box .modal-header i{color:#fff; float:right; position: relative; top:-12px; right:10px; cursor: pointer;}
+.modal-box .modal-left{padding-left:10px; float: left;}
+.modal-box .modal-left .ml-top{width:400px; height:350px; background-color:#f2f2f2; padding:10px 0 0 20px; border:1px solid rgb(211, 211, 211);}
+.modal-box .modal-left .ml-top form button{position: relative; left:160px; top:10px; box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5);}
+.modal-box .modal-left .ml-top form label:nth-of-type(1) input{position: relative; left:14px}
+.modal-box .modal-left .ml-top form .last_label{position:absolute; bottom:64px}
+.modal-box .modal-left > p{position: relative; top:75px; font-size:14px; text-align: center; color:red; font-weight:bold;}
+.modal-box .modal-right{width:558px; float:right; padding:10px 0 0 0; height:280px; position: relative; top:-1px}
+.modal-box .modal-right form label select{position: relative; left:36px; height:34px;}
+.modal-box .modal-right form label button{border:0px none; position: relative; left:-6px; border-radius:0; height:34px; top:1px; background-color:#f2f2f2; border:1px solid #dbdbdb;}
+.modal-box .modal-right form .pop_grid{overflow-y:scroll; height:260px;}
+.modal-box .modal-right form .pop_grid > table > thead > tr > td{padding:5px 0}
+.modal-box .modal-right form .footer_label{margin-top:14px;}
+.modal-box .modal-right form .footer_label > label > input{width:75px; margin-left:10px;}
+.modal-box .modal-right form .footer_label > label.short{float:left; margin-right:30px;}
+.modal-box .modal-right form .footer_label > label.foo-la{position:absolute; bottom:-126px}
+.modal-box .modal-right form .footer_label > label.foo-la > input{width:261px;}
+.modal-box .modal-right form .footer_label > label.foo-la > button{margin-left:9px; background-color:#000; color:#fff; box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5); border:1px solid #000; border-radius:4px;}
+
+/* member.html */
+.info.member select:nth-of-type(1){margin-right:15px}
+.info.member select:nth-of-type(2){margin-right:15px;}
+.info.member select:nth-of-type(3){margin-right:15px; margin-left:15px;}
+.info.member select:nth-of-type(4){margin-right:15px; margin-left:15px;}
+
+
+
+
+
