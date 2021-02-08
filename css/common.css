@@ -18,13 +18,16 @@ table > thead > tr > td:nth-of-type(3){padding-left:50px; padding-right:50px}
 table > tbody > tr:nth-child(odd){background-color:#f2f2f2;}
 table > tbody > tr{height:40px;}
 table > tbody > tr > td{text-align:center;  vertical-align:middle; font-size:14px; border:1px solid #d9d9d9;}
+table > tbody > tr > td.no-res{color:red}
 label{display:block; font-size:14px; margin-bottom:10px; color: rgb(80, 80, 80); position: relative;}
 label .circle{display:inline-block; width:4px; height:4px; border-radius:50%; background-color:#000; position: relative; top:-2px; margin-right:6px;}
 label input{margin-left:30px;}
 textarea{width:373px;}
 
+.wrap{min-width:1600px;}
+
 /* aside */
-#aside{overflow:hidden;position:absolute;top:0;left:0;width:240px;height:1800px;background-color:#262626;}
+#aside{overflow:hidden;position:absolute;top:0;left:0;width:240px;height:1600px;background-color:#262626;}
 #aside h1 a{display: flex;align-items: center;justify-content:center;height:50px; background-color:#000000; font-size:20px; font-weight:bold}
 .gnb{background:#262626}
 .gnb a{display:block; font-size:14px}
@@ -38,18 +41,6 @@ textarea{width:373px;}
 .gnb .dep2>li+li{border-top:1px solid #545760}
 .gnb .dep2>li>a{display:inline-block;padding-right:30px;background-size:21px;color:#fff}
 .gnb .dep2>li>a.on{background-size:21px;color:#00b0f0}
-
-/* .left_section{width:200px; background-color:#262626; color:#ffffff; position:absolute; top:0; bottom:0;}
-.left_section > h1{background-color:#000000; text-align:center; height:36px; line-height:36px; font-weight:bold; font-size:15px;}
-.left_section .nav_tit{height:32px; line-height:32px; font-size:12px; padding-left:6px; box-sizing:border-box; cursor:pointer;}
-.left_section > ul > li{height:100%; border-bottom:1px solid rgba(255, 255, 255, 0.7);}
-.left_section > ul > li > a{display:block; padding:0 8px 0 6px; height:32px; line-height:32px; font-size:12px;}
-.left_section > ul > li.firstList > a{position:relative; left:-6px;}
-.left_section > ul > li > a > i{float:right; position:relative; top:12px}
-.left_section .active_nav{background-color:#0070c0; border-bottom:1px solid #0070c0; box-sizing:border-box;}
-.left_section .active_two-nav{color:#00b0f0;}
-.left_section .js-title + .two-depth{display:none;}
-.left_section .two-depth > li > a{display:block; padding-left:16px; margin:16px 0; font-size:12px;} */
 
 .right_section{width:100%;}
 .right_section .header{width:100%; height:50px; background-color:#262626; padding-left:200px; box-sizing:border-box;}

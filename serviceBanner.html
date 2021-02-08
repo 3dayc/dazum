@@ -116,15 +116,15 @@
                 </ul>
             </div>
             <div class="contain_header">
-                <h1>승인관리</h1>
+                <h1>서비스관리</h1>
                 <div class="route">
                     <p>HOME</p>
                     <span>></span>
-                    <p>CONFIRM</p>
+                    <p>SERVICE SETUP</p>
                     <span>></span>
-                    <p>승인관리</p>
+                    <p>서비스관리</p>
                     <span>></span>
-                    <p>보상프로</p>
+                    <p>배너관리</p>
                 </div>
             </div>
             <div class="container">
@@ -133,285 +133,249 @@
                         <div class="tab-item active">전체</div>
                     </div>
                     <div class="tab_right">
-                        <p>검색회원 총 <span>100</span> 명</p>
+                        <p>검색건수 총 <span>100</span> 건</p>
                     </div>
                 </div>
                 <form action="" class="info member">
                     <select name="" id="">
-                        <option value="">승인요청일</option>
+                        <option value="">등록일</option>
                     </select>
                     <input type="date">
                     <span>-</span>
                     <input type="date">
                     <select name="" id="">
-                        <option value="">반려여부</option>
-                    </select>
-                    <span>|</span>
-                    <select name="" id="">
                         <option value="">전체기간</option>
                     </select>
                     <span>|</span>
                     <select name="" id="">
-                        <option value="">회원 아이디</option>
+                        <option value="">관리자 아이디</option>
                     </select>
                     <input type="text">
+                    <span style="margin-left:14px">|</span>
+                    <select name="" id="">
+                        <option value="">전체 전시상태</option>
+                    </select>
                     <button class="active">Search</button>
                 </form>
-                <table style="margin-top:20px">
+                <div class="grid_btn">
+                    <button class="allSelect">전체선택</button>
+                    <button class="allSelect active">전체해제</button>
+                    <button class="allSelect active">삭제</button>
+                    <button class="allSelect">등록</button>
+                </div>
+                <table>
                     <thead>
                         <tr>
                             <td>선택</td>
                             <td>번호</td>
-                            <td>보상프로아이디</td>
-                            <td>기업명</td>
-                            <td>담당자이름</td>
-                            <td>사업장 주소</td>
-                            <td>휴대폰번호</td>
-                            <td>보상프로가입일</td>
-                            <td>승인요청일</td>
-                            <td>반려여부</td>
+                            <td>관리자아이디</td>
+                            <td>이름</td>
+                            <td>배너구분</td>
+                            <td style="width:30%;">제목</td>
+                            <td>상태</td>
+                            <td>등록일자</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 스크롤배너</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td class="no-res">미전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 스크롤배너</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                         <tr>
                             <td><input class="grid js-chk" type="checkbox"></td>
                             <td>20</td>
-                            <td>flywork@NAVER.COM</td>
-                            <td>손해사정법인</td>
+                            <td>flywork</td>
                             <td>홍길동</td>
-                            <td>서울시 용산구</td>
-                            <td>01012345679</td>
+                            <td>메인 키비쥬얼</td>
+                            <td>제목 (사이즈정보)</td>
+                            <td>전시</td>
                             <td>YYYY-MM-DD</td>
-                            <td>YYYY-MM-DD</td>
-                            <td>Y</td>
                         </tr>
                     </tbody>
                 </table>
