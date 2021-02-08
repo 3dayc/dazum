@@ -104,7 +104,31 @@ textarea{width:373px;}
 .info.member select:nth-of-type(3){margin-right:15px; margin-left:15px;}
 .info.member select:nth-of-type(4){margin-right:15px; margin-left:15px;}
 
-
+/* memberCompensationDetail.html */
+.right_section .container .form_btn{margin:20px 0; float:right;}
+.right_section .container .form_btn > button{background-color:rgb(156, 156, 156); color:#fff; border:0px none;}
+.right_section .container .form_btn > button.active{background-color:#000;}
+.right_section .container .container-box{position:relative;}
+.right_section .container .container-box .contain-left{display:inline-block; width:280px; height:619px; margin-top:73px}
+.right_section .container .container-box .contain-left .first_box{width:280px; height:290px; border:1px solid rgb(177, 177, 177); box-sizing:border-box;}
+.right_section .container .container-box .contain-left .second_box{border:1px solid rgb(177, 177, 177); margin-top:10px}
+.right_section .container .container-box .contain-left .second_box > h3{font-size:15px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
+.right_section .container .container-box .contain-left .second_box > ul{margin:8px;}
+.right_section .container .container-box .contain-left .second_box > ul > li > div{border:1px solid rgb(177, 177, 177); font-size:15px; padding:10px; margin-bottom:6px;}
+.right_section .container .container-box .contain-left .third_box{border:1px solid rgb(177, 177, 177); margin-top:10px}
+.right_section .container .container-box .contain-left .third_box > h3{font-size:15px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
+.right_section .container .container-box .contain-left .third_box > ul{margin:8px;}
+.right_section .container .container-box .contain-left .third_box > ul > li > div{border:1px solid rgb(177, 177, 177); font-size:15px; padding:10px; margin-bottom:6px;}
+.right_section .container .container-box .contain-right{position:absolute; top:0; width:calc(100% - 300px); left:300px; top:72px; height:1000px; border-top:1px solid rgb(177, 177, 177)}
+.right_section .container .container-box .contain-right .select_tab{margin-top:16px}
+.right_section .container .container-box .contain-right .select_tab > span{font-size:15px; font-weight:bold; color:rgb(90, 90, 90)}
+.right_section .container .container-box .contain-right .select_tab > span:nth-of-type(2){position:relative; top:-2px}
+.right_section .container .container-box .contain-right .select_tab > span.active{color:#0e77c2}
+.right_section .container .container-box .contain-right .detail_main{border:1px solid rgb(177, 177, 177); height:800px; margin-top:16px}
+.right_section .container .container-box .contain-right .detail_main > p{border-bottom:1px solid rgb(177, 177, 177); padding:10px; background-color:rgb(228, 228, 228); color:rgb(83, 83, 83); font-weight:bold;}
+.right_section .container .container-box .contain-right .detail_main label{margin:16px 16px 10px 16px; color:rgb(110, 110, 110); font-weight:bold}
+.right_section .container .container-box .contain-right .detail_main input[type="textarea"]{width:calc(100% - 48px); margin-left:16px; height:120px;}
+.right_section .container .container-box .contain-right .detail_main > label > span{color:rgb(196, 35, 35); margin-left:16px}
 
 
 
