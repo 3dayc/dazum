@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="aside">
+			<h1>
+				<a href="">
+					BI
+				</a>
+			</h1>
+			<div id="gnb">
+				<ul class="gnb">
+					<li>
+						<a href="dashboard.html">DASHBOARD</a>
+					</li>
+					<li>
+                        <a href="">
+                            MEMBER
+                            <br>
+                            <br>
+                            <br>
+                            회원관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="member.html" class="on">일반회원</a></li>
+							<li><a href="memberCompensation.html">보상프로</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+                            CONFIRM
+                            <br>
+                            <br>
+                            <br>
+                            승인관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="confirmCompensation.html" class="on">보상프로</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+                            CONSULTATION
+                            <br>
+                            <br>
+                            <br>
+                            상담관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="phoneAdvice.html" class="on">전화상담</a></li>
+							<li><a href="markAdvice.html">1:1상담</a></li>
+							<li><a href="openAdvice.html">열린상담</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+                            COMPENSATION CASE
+                            <br>
+                            <br>
+                            <br>
+                            보상사례 관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="management.html" class="on">보상사례</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">
+                            SERVICE SETUP
+                            <br>
+                            <br>
+                            <br>
+                            서비스 관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="serviceNotice.html" class="on">공지사항</a></li>
+							<li><a href="serviceQuestion.html">자주 묻는 질문</a></li>
+							<li><a href="">이용약관</a></li>
+							<li><a href="">개인정보보호정책</a></li>
+							<li><a href="serviceSearch.html">관리자조회</a></li>
+							<li><a href="serviceBanner.html">배너관리</a></li>
+						</ul>
+                    </li>
+                    <li class="last_list">
+						<a href="">
+                            INSURANCE
+                            <br>
+                            <br>
+                            <br>
+                            보상청구 관리<i class="fas fa-chevron-down"></i>
+                        </a>
+						<ul class="dep2">
+							<li><a href="charge.html" class="on">청구내역</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+        <div class="right_section">
+            <div class="header">
+                <ul>
+                    <li><a href="#" class="two_text active_two-nav">플라이워크</a></li>
+                    <li><a href="#" class="two_text">Log out</a></li>
+                    <li><a href="#"><i class="fas fa-user-circle fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="contain_header">
+                <h1>보상프로 관리</h1>
+                <div class="route">
+                    <p>HOME</p>
+                    <span>></span>
+                    <p>MEMBER</p>
+                    <span>></span>
+                    <p>회원관리</p>
+                    <span>></span>
+                    <p>보상프로</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="tab">
+                    <div class="tab_left">
+                        <div class="tab-item active">전체</div>
+                        <div class="tab-item">휴면회원</div>
+                    </div>
+                    <div class="tab_right">
+                        <p>검색회원 총 <span>100</span> 명</p>
+                        <span>&nbsp&nbsp|&nbsp&nbsp</span>
+                        <p>메일링수신 <span>80</span> 명</p>
+                        <span>&nbsp&nbsp|&nbsp&nbsp</span>
+                        <p>SMS수신 <span>10</span> 명</p>
+                    </div>
+                </div>
+                <form action="" class="info member">
+                    <select name="" id="">
+                        <option value="">회원상태</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">회원 가입일</option>
+                    </select>
+                    <input type="date">
+                    <span>-</span>
+                    <input type="date">
+                    <select name="" id="">
+                        <option value="">전체기간</option>
+                    </select>
+                    <span>|</span>
+                    <select name="" id="">
+                        <option value="">회원아이디</option>
+                    </select>
+                    <input type="text">
+                    <button class="active">Search</button>
+                </form>
+                <div class="grid_btn">
+                    <button class="allSelect">전체선택</button>
+                    <button class="allSelect active">전체해제</button>
+                    <button class="message" id="selectMessage">선택회원 메세지발송</button>
+                    <button class="message" id="allMessage">전체회원 메세지발송</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>선택</td>
+                            <td>번호</td>
+                            <td>보상프로아이디</td>
+                            <td>기업명</td>
+                            <td>담당자이름</td>
+                            <td>사업장 주소</td>
+                            <td>휴대폰번호</td>
+                            <td>보상프로가입일</td>
+                            <td>최종로그인</td>
+                            <td>휴먼전환일</td>
+                            <td>회원탈퇴일</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                        <tr>
+                            <td><input class="grid js-chk" type="checkbox"></td>
+                            <td>20</td>
+                            <td>flywork@NAVER.COM</td>
+                            <td>손해사정법인</td>
+                            <td>홍길동</td>
+                            <td>서울시 용산구</td>
+                            <td>01012345679</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                            <td>YYYY-MM-DD</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_paging">
+                    <div class="left">
+                        Showing X to XX of XX entries
+                    </div>
+                    <div class="center">
+                        <button>Prev</button>
+                        <button class="pn active">1</button>
+                        <button class="pn">2</button>
+                        <button class="pn">3</button>
+                        <button class="pn">4</button>
+                        <button class="pn">5</button>
+                        <button class="pn">6</button>
+                        <button class="pn">7</button>
+                        <button class="pn">8</button>
+                        <button class="pn">9</button>
+                        <button>Next</button>
+                    </div>
+                    <div class="right">
+                        <span>Show</span>
+                        <select name="" id="">
+                            <option value="">20</option>
+                            <option value="">50</option>
+                            <option value="">100</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright C 2020 FLYWORK All rights reserved.
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="overlay" id="overlay"></div>
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h1>메세지 발송</h1>
+                    <i class="fas fa-times fa-lg" id="closeBtn"></i>
+                </div>
+                <div class="modal-left">
+                    <div class="ml-top">
+                        <form action="">
+                            <label for="">
+                                <span class="circle"></span>발송자
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span class="circle"></span>발송일자
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span class="circle"></span>발송시간
+                                <input type="text">
+                            </label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <button class="active">발송하기</button>
+                            <label for="" class="last_label">
+                                <span class="circle"></span>발송번호
+                                <input type="text">
+                            </label>
+                        </form>
+                    </div>
+                    <p>* 발송 시간은 오전 9:00 ~ 18:00 까지만 가능합니다.</p>
+                </div>
+                <div class="modal-right">
+                    <form action="">
+                        <label for="" style="margin-left:20px">
+                            <span class="circle"></span>발송대상 : <span>xxx</span> 명
+                            <select name="" id="">
+                                <option value="">회원아이디</option>
+                            </select>
+                            <input type="text">
+                            <button>검색</button>
+                        </label>
+                        <div class="pop_grid">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>선택</td>
+                                        <td>번호</td>
+                                        <td>보상프로아이디</td>
+                                        <td>기업명</td>
+                                        <td>담당자이름</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="grid js-chk" type="checkbox"></td>
+                                        <td>20</td>
+                                        <td>flywork@NAVER.COM</td>
+                                        <td>손해사정법인</td>
+                                        <td>홍길동</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer_label">
+                            <label for="" class="short" style="margin-left:20px">
+                                <span class="circle"></span>미수신
+                                <input type="text">
+                            </label>
+                            <label for="" class="short">
+                                <span class="circle"></span>수신
+                                <input type="text">
+                            </label>
+                            <label for="" class="short">
+                                <span class="circle"></span>전체
+                                <input type="text">
+                            </label>
+                            <label for="" class="foo-la">
+                                <span class="circle" style="margin-left:20px"></span>테스트 수신번호
+                                <input type="text">
+                                <button class="">테스트 발송</button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
