@@ -116,15 +116,15 @@
                 </ul>
             </div>
             <div class="contain_header">
-                <h1>회원관리</h1>
+                <h1>서비스관리</h1>
                 <div class="route">
                     <p>HOME</p>
                     <span>></span>
-                    <p>MEMBER</p>
+                    <p>SERVICE SETUP</p>
                     <span>></span>
-                    <p>회원관리</p>
+                    <p>서비스관리</p>
                     <span>></span>
-                    <p>보상프로 상세</p>
+                    <p>개인정보보호정책</p>
                 </div>
             </div>
             <div class="container">
@@ -133,91 +133,70 @@
                     <button class="save">저장</button>
                     <button class="remove active">삭제</button>
                 </div>
-                <div class="container-box">
-                    <div class="contain-left">
-                        <div class="first_box">
-                            
-                        </div>
-                        <div class="second_box">
-                            <h3>활동현황</h3>
-                            <ul>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>전화상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>1:1상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>열린상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="third_box">
-                            <h3>메세지 수신</h3>
-                            <ul>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>이메일</div>
-                                        <div>
-                                            <span>수신</span>
-                                            <i class="fas fa-toggle-on fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>SNS</div>
-                                        <div>
-                                            <span>수신</span>
-                                            <i class="fas fa-toggle-off fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="container-box wide">
                     <div class="contain-right">
-                        <div class="select_tab">
-                            <span>회원정보</span>
-                            <span>|</span>
-                            <span class="active">프로필관리</span>
-                        </div>
-                        <form action="" class="detail_main">
-                            <p>프로필 정보</p>
-                            <label for="">보상프로 소개</label>
-                            <input type="textarea">
-                            <label for="">분야<span class="red">* 분야는 최대 x개 까지 선택 가능합니다.</span></label>
+                        <form action="" class="detail_main h870">
+                            <p>기본 정보</p>
+                            <div class="detail_subbox">
+                                <h3>기간 정보</h3>
+                                <div>
+                                    <p>공식 스케쥴</p>
+                                    <div>
+                                        <input type="date">
+                                        <select name="" id="">
+                                            <option value="">16</option>
+                                        </select>
+                                        <span>시</span>
+                                        <select name="" id="">
+                                            <option value="">0</option>
+                                        </select>
+                                        <span>분</span>
+                                        <span style="margin:0 20px;">~</span>
+                                        <input type="date">
+                                        <select name="" id="">
+                                            <option value="">16</option>
+                                        </select>
+                                        <span>시</span>
+                                        <select name="" id="">
+                                            <option value="">0</option>
+                                        </select>
+                                        <span>분</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>방문일 접수일</p>
+                                    <div>
+                                        <input type="date">
+                                        <span style="margin:0 20px;">~</span>
+                                        <input type="date">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>공개 여부</p>
+                                    <div>
+                                        <input type="radio" checked><span class="radio_txt">공개</span>
+                                        <input type="radio"><span class="radio_txt">비공개</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="">배너구분</label>
                             <select name="" id="" class="wide">
-                                <option value="">분야선택</option>
+                                <option value="">메인 키비쥬얼</option>
                             </select>
-                            <span class="close">분야명 X</span>
-                            <span class="close">분야명 X</span>
-                            <label for="">경력<span> (0년 0개월)</span></label>
+                            <label for="">파일선택</label>
+                            <input type="" class=" wide" placeholder="filename.jpeg">
+                            <button class="file_search">파일찾기</button>
+                            <label for="">전시순위(고정)</label>
                             <select name="" id="" class="wide">
-                                <option value="">년수 선택</option>
+                                <option value="">1</option>
                             </select>
-                            <select name="" id="" class="wide mt10">
-                                <option value="">개월 선택</option>
-                            </select>
-                            <label for="">자격<span class="blue">추가+</span></label>
-                            <input type="text" class="wide">
-                            <label for="">학력<span class="blue">추가+</span></label>
-                            <select name="" id="" class="wide">
-                                <option value="">대학교(4년제)</option>
-                            </select>
-                            <input type="text" class="wide mt10" placeholder="학교명">
-                            <select name="" id="" class="wide mt10">
-                                <option value="">졸업여부</option>
-                            </select>
+                            <label for="">제목</label>
+                            <input type="text" class=" wide" placeholder="제목명">
+                            <label for="">배너 링크</label>
+                            <input type="text" class=" wide">
+                            <label for="">배너 사이즈</label>
+                            <input type="number" class=" wide" placeholder="가로 px 수치만 입력하세요.">
+                            <input type="number" class=" wide mt10" placeholder="세로 px 수치만 입력하세요.">
                         </form>
                     </div>
                 </div>

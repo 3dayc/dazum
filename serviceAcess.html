@@ -116,108 +116,39 @@
                 </ul>
             </div>
             <div class="contain_header">
-                <h1>회원관리</h1>
+                <h1>서비스관리</h1>
                 <div class="route">
                     <p>HOME</p>
                     <span>></span>
-                    <p>MEMBER</p>
+                    <p>SERVICE SETUP</p>
                     <span>></span>
-                    <p>회원관리</p>
+                    <p>서비스관리</p>
                     <span>></span>
-                    <p>보상프로 상세</p>
+                    <p>이용약관</p>
                 </div>
             </div>
             <div class="container">
                 <div class="form_btn">
-                    <button class="list">목록</button>
                     <button class="save">저장</button>
-                    <button class="remove active">삭제</button>
+                    <button class="remove active">초기화</button>
                 </div>
-                <div class="container-box">
-                    <div class="contain-left">
-                        <div class="first_box">
-                            
-                        </div>
-                        <div class="second_box">
-                            <h3>활동현황</h3>
-                            <ul>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>전화상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>1:1상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>열린상담</div>
-                                        <div><span>xx</span> 건</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="third_box">
-                            <h3>메세지 수신</h3>
-                            <ul>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>이메일</div>
-                                        <div>
-                                            <span>수신</span>
-                                            <i class="fas fa-toggle-on fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="mini-box">
-                                        <div><i class="fab fa-atlassian"></i>SNS</div>
-                                        <div>
-                                            <span>수신</span>
-                                            <i class="fas fa-toggle-off fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="container-box wide">
                     <div class="contain-right">
                         <div class="select_tab">
-                            <span>회원정보</span>
+                            <span class="active">개인이용약관</span>
                             <span>|</span>
-                            <span class="active">프로필관리</span>
+                            <span>보상프로이용약관</span>
                         </div>
                         <form action="" class="detail_main">
-                            <p>프로필 정보</p>
-                            <label for="">보상프로 소개</label>
-                            <input type="textarea">
-                            <label for="">분야<span class="red">* 분야는 최대 x개 까지 선택 가능합니다.</span></label>
-                            <select name="" id="" class="wide">
-                                <option value="">분야선택</option>
-                            </select>
-                            <span class="close">분야명 X</span>
-                            <span class="close">분야명 X</span>
-                            <label for="">경력<span> (0년 0개월)</span></label>
-                            <select name="" id="" class="wide">
-                                <option value="">년수 선택</option>
-                            </select>
-                            <select name="" id="" class="wide mt10">
-                                <option value="">개월 선택</option>
-                            </select>
-                            <label for="">자격<span class="blue">추가+</span></label>
-                            <input type="text" class="wide">
-                            <label for="">학력<span class="blue">추가+</span></label>
-                            <select name="" id="" class="wide">
-                                <option value="">대학교(4년제)</option>
-                            </select>
-                            <input type="text" class="wide mt10" placeholder="학교명">
-                            <select name="" id="" class="wide mt10">
-                                <option value="">졸업여부</option>
-                            </select>
+                            <p>기본 정보</p>
+                            <label for="">등록일시</label>
+                            <input type="text" class="disabled wide" placeholder="YYYY-MM-DD HH:MM:SS">
+                            <label for="">관리자 아이디</label>
+                            <input type="text" class="disabled wide" placeholder="askdakls">
+                            <label for="">이름</label>
+                            <input type="text" class="disabled wide" placeholder="홍길동">
+                            <label for="">개인이용약관</label>
+                            <input type="textarea" style="height:483px;">
                         </form>
                     </div>
                 </div>

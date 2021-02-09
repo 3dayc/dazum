@@ -1,8 +1,15 @@
 @import 'reset.css';
 
 select{width:136px; height:36px; border:1px solid #d9d9d9; padding:0 6px;}
+select.wide{width:calc(100% - 32px); margin:0 15px}
+select.wide.mt10{margin-top:10px}
 input{width:136px; height:32px; border:1px solid #d9d9d9; padding:0 6px;}
+input.disabled{background-color:rgb(238, 238, 238);}
 input[type="checkbox"]{width:18px;}
+input[type="radio"]{width:18px;}
+span.radio_txt{font-size:14px; position:relative; top:-10px;}
+input.wide{width:calc(100% - 44px); margin:0 15px}
+input.wide.mt10{margin-top:10px}
 button{padding:8px 10px 8px 10px; font-size:13px; border:2px solid #000; background-color:#fff; border-radius:4px; cursor:pointer;}
 button.active{color:#fff; background-color:#000;}
 button.message{padding:5px 5px 5px 5px; background-color:#f2f2f2; border:1px solid #d9d9d9; color:#7f7f7f; letter-spacing:-1.5px;}
@@ -112,14 +119,25 @@ textarea{width:373px;}
 .right_section .container .container-box .contain-left{display:inline-block; width:280px; height:619px; margin-top:73px}
 .right_section .container .container-box .contain-left .first_box{width:280px; height:290px; border:1px solid rgb(177, 177, 177); box-sizing:border-box;}
 .right_section .container .container-box .contain-left .second_box{border:1px solid rgb(177, 177, 177); margin-top:10px}
-.right_section .container .container-box .contain-left .second_box > h3{font-size:15px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
+.right_section .container .container-box .contain-left .second_box > h3{font-size:14px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
 .right_section .container .container-box .contain-left .second_box > ul{margin:8px;}
-.right_section .container .container-box .contain-left .second_box > ul > li > div{border:1px solid rgb(177, 177, 177); font-size:15px; padding:10px; margin-bottom:6px;}
+.right_section .container .container-box .contain-left .second_box > ul > li > .mini-box{border:1px solid rgb(177, 177, 177); font-size:13px; height:34px; line-height:34px; margin-bottom:6px; display:flex; justify-content:space-between;}
+.right_section .container .container-box .contain-left .second_box > ul > li > .mini-box > div:nth-of-type(1){width:50%; background-color:rgb(228, 228, 228);}
+.right_section .container .container-box .contain-left .second_box > ul > li > .mini-box > div:nth-of-type(1) > i{margin:0 4px 0 6px; opacity:0.5;}
+.right_section .container .container-box .contain-left .second_box > ul > li > .mini-box > div:nth-of-type(2){width:50%; text-align:right; margin-right:6px;}
+.right_section .container .container-box .contain-left .second_box > ul > li > .mini-box > div:nth-of-type(2) > span{color:#0e77c2; font-weight:bold;}
+
 .right_section .container .container-box .contain-left .third_box{border:1px solid rgb(177, 177, 177); margin-top:10px}
-.right_section .container .container-box .contain-left .third_box > h3{font-size:15px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
+.right_section .container .container-box .contain-left .third_box > h3{font-size:14px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
 .right_section .container .container-box .contain-left .third_box > ul{margin:8px;}
-.right_section .container .container-box .contain-left .third_box > ul > li > div{border:1px solid rgb(177, 177, 177); font-size:15px; padding:10px; margin-bottom:6px;}
-.right_section .container .container-box .contain-right{position:absolute; top:0; width:calc(100% - 300px); left:300px; top:72px; height:1000px; border-top:1px solid rgb(177, 177, 177)}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box{border:1px solid rgb(177, 177, 177); font-size:13px; height:34px; line-height:34px; margin-bottom:6px; display:flex; justify-content:space-between;}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box > div:nth-of-type(1){width:50%; background-color:rgb(228, 228, 228);}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box > div:nth-of-type(1) > i{margin:0 4px 0 6px; opacity:0.5;}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box > div:nth-of-type(2){width:50%; text-align:right;}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box > div:nth-of-type(2) > span{float:left; margin-left:6px; font-size:13px}
+.right_section .container .container-box .contain-left .third_box > ul > li > .mini-box > div:nth-of-type(2) > i{position:relative; top:4px; color:#0e77c2; margin-right:6px}
+
+.right_section .container .container-box .contain-right{position:absolute; width:calc(100% - 300px); left:300px; top:73px; height:1000px; border-top:1px solid rgb(177, 177, 177)}
 .right_section .container .container-box .contain-right .select_tab{margin-top:16px}
 .right_section .container .container-box .contain-right .select_tab > span{font-size:15px; font-weight:bold; color:rgb(90, 90, 90)}
 .right_section .container .container-box .contain-right .select_tab > span:nth-of-type(2){position:relative; top:-2px}
@@ -128,7 +146,21 @@ textarea{width:373px;}
 .right_section .container .container-box .contain-right .detail_main > p{border-bottom:1px solid rgb(177, 177, 177); padding:10px; background-color:rgb(228, 228, 228); color:rgb(83, 83, 83); font-weight:bold;}
 .right_section .container .container-box .contain-right .detail_main label{margin:16px 16px 10px 16px; color:rgb(110, 110, 110); font-weight:bold}
 .right_section .container .container-box .contain-right .detail_main input[type="textarea"]{width:calc(100% - 48px); margin-left:16px; height:120px;}
-.right_section .container .container-box .contain-right .detail_main > label > span{color:rgb(196, 35, 35); margin-left:16px}
+.right_section .container .container-box .contain-right .detail_main > label > span.red{color:rgb(196, 35, 35); margin-left:16px}
+.right_section .container .container-box .contain-right .detail_main > label > span.blue{color:#0e77c2; margin-left:16px}
+.right_section .container .container-box .contain-right .detail_main .close{display:inline-block; background-color:rgb(196, 196, 196); margin-top:12px; padding:7px 12px; font-size:13px; border-radius:14px;}
+.right_section .container .container-box .contain-right .detail_main .close:nth-of-type(1){margin-left:15px}
 
+/* right_section wide */
+.right_section .container .container-box.wide .contain-right{left:0; width:100%}
+
+/* serviceBannerInfo.html */
+.right_section .container .container-box .contain-right .detail_main.h870{height:870px;}
+.right_section .container .container-box .contain-right .detail_main .file_search{position:absolute; height:34px; right:16px; width:120px; background-color:#000; color:#fff; font-size:13px; line-height:16px;}
+.right_section .container .container-box .contain-right .detail_main .detail_subbox{margin-top:20px; margin-bottom:40px; padding:10px; background-color:#edf1f4;}
+.right_section .container .container-box .contain-right .detail_main .detail_subbox > h3{padding:12px 18px; font-weight:bold; border-bottom:1px solid rgb(175, 175, 175); border-top:1px solid rgb(175, 175, 175); background-color:#fff; border-left:1px solid rgb(175, 175, 175); border-right:1px solid rgb(175, 175, 175);}
+.right_section .container .container-box .contain-right .detail_main .detail_subbox > div{display:flex; border-bottom:1px solid rgb(175, 175, 175);}
+.right_section .container .container-box .contain-right .detail_main .detail_subbox > div > p{padding:16px 14px; font-size:13px; width:100px; text-align:center; border-right:1px solid rgb(175, 175, 175); background-color:#f7fafe; font-weight:bold; color:rgb(85, 85, 85); border-left:1px solid rgb(175, 175, 175); border-right:1px solid rgb(175, 175, 175); line-height:40px;}
+.right_section .container .container-box .contain-right .detail_main .detail_subbox > div > div{width:100%; padding:16px 14px; background-color:#fff; border-right:1px solid rgb(175, 175, 175);}
 
 
