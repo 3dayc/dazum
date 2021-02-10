@@ -105,6 +105,36 @@ textarea{width:373px;}
 .modal-box .modal-right form .footer_label > label.foo-la > input{width:261px;}
 .modal-box .modal-right form .footer_label > label.foo-la > button{margin-left:9px; background-color:#000; color:#fff; box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5); border:1px solid #000; border-radius:4px;}
 
+/* login.html */
+.login-top{width:100%; height:50px; background-color:#262626; color:#fff;}
+.login-top > span{display:block; width:30px; height:30px; border-radius:50%; margin:0 auto; border:2px solid #fff; text-align:center; line-height:30px; font-weight:bold; position:relative; top:7px}
+.login-main{width:1000px; height:600px; border:1px solid rgb(179, 179, 179); position:absolute; transform:translate(-50%, -50%); left:50%; top:50%}
+.login-main{display:flex; border-radius:10px; box-shadow:0px 0px 23px 0px rgba(0,0,0,0.75);}
+.login-main .log_left{width:50%; border-right:1px solid rgb(179, 179, 179);}
+.login-main .log_right{width:50%;}
+.login-main .log_right > span{display:block; width:34px; height:34px; border-radius:50%; margin:0 auto; border:2px solid #000; text-align:center; line-height:32px; font-weight:bold; font-size:22px; margin-top:30px}
+.login-main .log_right > h1{margin:80px 0 0 80px; font-size:18px; font-weight:bold;}
+.login-main .log_right input{display:block; margin-left:60px; width:360px; border:0px none; border-bottom:1px solid rgb(179, 179, 179);}
+.login-main .log_right input:nth-of-type(1){margin-top:100px}
+.login-main .log_right input:nth-of-type(2){margin-top:20px}
+.login-main .log_right button{margin-left:60px; margin-top:50px; width:360px; border-radius:20px; background-color:#000; color:#fff; box-shadow:5px 5px 5px 0px rgba(0,0,0,0.75);}
+.login-main .log_right p{text-align:center; font-size:16px; margin-top:60px; color:rgb(238, 10, 10)}
+.login-main .log_right p i{margin-right:6px; color:#0e77c2}
+
+/* dashboard.html */
+.right_section .container .dashboard-top{width:100%; height:305px; margin-top:20px; border:1px solid rgb(189, 189, 189);}
+.right_section .container .dashboard-top .one_depth{display:flex;}
+.right_section .container .dashboard-top .one_depth > li{width:25%; text-align:center; position:relative;}
+.right_section .container .dashboard-top .one_depth > li > span{display:block; width:40px; height:40px; background-color:rosybrown; font-size:13px; margin:0 auto; line-height:40px; border-radius:50%; color:#fff; background-color:#000; margin-top:16px}
+.right_section .container .dashboard-top .one_depth > li > p{margin-top:16px; font-size:14px; color:rgb(121, 121, 121); font-weight:bold;}
+.right_section .container .dashboard-top .one_depth > li .full-line{width:370px; height:2px; border-radius:2px; background-color: rgb(212, 212, 212); margin:0 auto; margin:16px auto 22px;}
+.right_section .container .dashboard-top .one_depth > li .ing-line{width:100px; height:2px; background-color:#0e77c2; position:relative;}
+.right_section .container .dashboard-top .one_depth > li .vertical-line{width:1px; height:60px; background-color:rgb(189, 189, 189); position:absolute; right:-1px; top:72px}
+.right_section .container .dashboard-top .two_depth{padding:0 16px;}
+.right_section .container .dashboard-top .two_depth > li{display:flex; justify-content:space-between; margin-bottom:22px; font-size:14px; color:rgb(121, 121, 121); font-weight:bold;}
+.right_section .container .dashboard-top .two_depth > li > p > span{color:#0e77c2}
+.right_section .container .dashboard-bottom{width:100%; height:500px; margin-top:20px; border:1px solid rgb(189, 189, 189); text-align:center; line-height:500px;}
+
 /* member.html */
 .info.member select:nth-of-type(1){margin-right:15px}
 .info.member select:nth-of-type(2){margin-right:15px;}
@@ -117,7 +147,14 @@ textarea{width:373px;}
 .right_section .container .form_btn > button.active{background-color:#000;}
 .right_section .container .container-box{position:relative;}
 .right_section .container .container-box .contain-left{display:inline-block; width:280px; height:619px; margin-top:73px}
-.right_section .container .container-box .contain-left .first_box{width:280px; height:290px; border:1px solid rgb(177, 177, 177); box-sizing:border-box;}
+.right_section .container .container-box .contain-left .first_box{width:280px; height:290px; border:1px solid rgb(177, 177, 177); box-sizing:border-box; padding:10px; position:relative;}
+.right_section .container .container-box .contain-left .first_box .img-box{width:100%; height:100px; border:1px solid rgb(177, 177, 177);}
+.right_section .container .container-box .contain-left .first_box .img-box > p{background-color:#000; color:#fff; display:inline-block; margin:6px; font-size:12px; padding:3px 4px; border-radius:5px;}
+.right_section .container .container-box .contain-left .first_box .profile-box{width: 100px; height:100px; border:1px solid rgb(177, 177, 177); position:absolute; left:50%; transform:translate(-50%); top:60px; background-color: rgb(141, 163, 231);}
+.right_section .container .container-box .contain-left .first_box > p{font-size: 14px; font-weight:bold; color: rgb(59, 59, 59); text-align:center;}
+.right_section .container .container-box .contain-left .first_box > p:nth-of-type(1){margin-top: 70px;}
+.right_section .container .container-box .contain-left .first_box > p:nth-of-type(2){margin-top:10px}
+
 .right_section .container .container-box .contain-left .second_box{border:1px solid rgb(177, 177, 177); margin-top:10px}
 .right_section .container .container-box .contain-left .second_box > h3{font-size:14px; font-weight:bold; background-color:rgb(228, 228, 228); padding:10px; color:rgb(83, 83, 83); border-bottom:1px solid rgb(177, 177, 177);}
 .right_section .container .container-box .contain-left .second_box > ul{margin:8px;}
@@ -142,7 +179,7 @@ textarea{width:373px;}
 .right_section .container .container-box .contain-right .select_tab > span{font-size:15px; font-weight:bold; color:rgb(90, 90, 90)}
 .right_section .container .container-box .contain-right .select_tab > span:nth-of-type(2){position:relative; top:-2px}
 .right_section .container .container-box .contain-right .select_tab > span.active{color:#0e77c2}
-.right_section .container .container-box .contain-right .detail_main{border:1px solid rgb(177, 177, 177); height:800px; margin-top:16px}
+.right_section .container .container-box .contain-right .detail_main{border:1px solid rgb(177, 177, 177); height:950px; margin-top:16px}
 .right_section .container .container-box .contain-right .detail_main > p{border-bottom:1px solid rgb(177, 177, 177); padding:10px; background-color:rgb(228, 228, 228); color:rgb(83, 83, 83); font-weight:bold;}
 .right_section .container .container-box .contain-right .detail_main label{margin:16px 16px 10px 16px; color:rgb(110, 110, 110); font-weight:bold}
 .right_section .container .container-box .contain-right .detail_main input[type="textarea"]{width:calc(100% - 48px); margin-left:16px; height:120px;}
@@ -150,6 +187,12 @@ textarea{width:373px;}
 .right_section .container .container-box .contain-right .detail_main > label > span.blue{color:#0e77c2; margin-left:16px}
 .right_section .container .container-box .contain-right .detail_main .close{display:inline-block; background-color:rgb(196, 196, 196); margin-top:12px; padding:7px 12px; font-size:13px; border-radius:14px;}
 .right_section .container .container-box .contain-right .detail_main .close:nth-of-type(1){margin-left:15px}
+.right_section .container .container-box .contain-right .detail_main .confirm{width:100%; height:250px; border:1px solid #d9d9d9; margin-left:15px; width:calc(100% - 32px); margin-top:10px; padding:5px 10px; box-sizing:border-box;}
+.right_section .container .container-box .contain-right .detail_main .confirm > span{position:relative; top:-11px; margin-right: 10px; font-size:14px}
+.right_section .container .container-box .contain-right .detail_main .confirm > label{position:relative; top:-10px}
+.right_section .container .container-box .contain-right .detail_main .confirm > input[type="textarea"]{position:relative; top:-10px}
+.right_section .container .container-box .contain-right .detail_main .confirm > button{position:relative; top:-1px;}
+.right_section .container .container-box .contain-right .detail_main .confirm > button:nth-of-type(1){margin-left:15px}
 
 /* right_section wide */
 .right_section .container .container-box.wide .contain-right{left:0; width:100%}
